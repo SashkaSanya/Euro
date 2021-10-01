@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	/* отображаем курсор в виде руки при наведении; некоторые
+	считают, что необходимо оставлять стрелочный вид для кнопок */
+	cursor: pointer;
+}
+
+body {
+	width: 1440px;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	height: 80px;
+}
+
+.trial {
+	height: 33px;
+
+	font-family: Roboto;
+	text-align: center;
+	font-size: 14px;
+	line-height: 33px;
+	letter-spacing: 0.10998px;
+
+	color: #ffffff;
+	background: #161f49;
+}
+.nav__logo {
+	margin-left: 36px;
+	margin-right: 195px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+.nav__list {
+	width: 766px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 172px;
+	list-style-type: none;
+}
+.nav__item {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+
+	text-align: center;
+	letter-spacing: 0.10998px;
+
+	color: #404040;
+}
+
+.nav__item:hover {
+	text-decoration: underline;
+}
+
+.nav__button {
+	width: 166px;
+	height: 80px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 80px;
+
+	text-align: center;
+	letter-spacing: 0.10998px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	background-color: #2468ff;
+}
