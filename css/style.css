@@ -68,6 +68,11 @@ nav {
 	color: #404040;
 }
 
+.nav__item a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .nav__item:hover {
 	text-decoration: underline;
 }
@@ -88,4 +93,65 @@ nav {
 
 	color: #ffffff;
 	background-color: #2468ff;
+}
+
+.intro {
+	height: 687px;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url("../image/Intro_bg.png");
+	background-repeat: no-repeat;
+}
+.intro__tittle {
+	text-align: center;
+
+	margin: 0 auto;
+	margin-bottom: 24px;
+	padding-top: 120px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 72px;
+	line-height: 80px;
+
+	color: #ffffff;
+}
+.intro__subtitle {
+	text-align: center;
+
+	margin: 0 auto;
+	margin-bottom: 16px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 29px;
+
+	color: #ffffff;
+}
+.intro__button {
+	display: block;
+	width: 226px;
+	height: 51px;
+	margin: 0 auto;
+	margin-bottom: 87px;
+
+	border: 1px solid #ffffff;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 13px;
+
+	text-align: center;
+	letter-spacing: 0.11px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
+
+.intro__img {
+	display: block;
+	margin: 0 auto;
 }
