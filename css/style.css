@@ -18,6 +18,10 @@ button {
 body {
 	width: 1440px;
 	margin: 0 auto;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
 }
 
 nav {
@@ -28,7 +32,6 @@ nav {
 .trial {
 	height: 33px;
 
-	font-family: Roboto;
 	text-align: center;
 	font-size: 14px;
 	line-height: 33px;
@@ -56,9 +59,6 @@ nav {
 	flex-direction: column;
 	align-self: center;
 
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: 25px;
 
@@ -81,9 +81,6 @@ nav {
 	width: 166px;
 	height: 80px;
 
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: 80px;
 
@@ -102,30 +99,25 @@ nav {
 	background-repeat: no-repeat;
 }
 .intro__tittle {
-	text-align: center;
-
 	margin: 0 auto;
 	margin-bottom: 24px;
 	padding-top: 120px;
 
-	font-family: Roboto;
-	font-style: normal;
 	font-weight: normal;
 	font-size: 72px;
 	line-height: 80px;
+	text-align: center;
 
 	color: #ffffff;
 }
 .intro__subtitle {
-	text-align: center;
-
 	margin: 0 auto;
 	margin-bottom: 16px;
-	font-family: Roboto;
-	font-style: normal;
+
 	font-weight: normal;
 	font-size: 21px;
 	line-height: 29px;
+	text-align: center;
 
 	color: #ffffff;
 }
@@ -138,9 +130,6 @@ nav {
 
 	border: 1px solid #ffffff;
 
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: 13px;
 
@@ -154,4 +143,298 @@ nav {
 .intro__img {
 	display: block;
 	margin: 0 auto;
+}
+
+.selection {
+}
+.selection__subtitle {
+	margin-top: 110px;
+	margin-bottom: 21.2px;
+
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+
+	text-align: center;
+
+	color: #404040;
+}
+.selection__icon {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 27px;
+}
+.selection__shop {
+	margin-bottom: 4.8px;
+
+	font-size: 14px;
+	line-height: 16px;
+
+	text-align: center;
+	text-transform: uppercase;
+}
+.selection__divider {
+	margin: 0 auto;
+	margin-bottom: 116.2px;
+	width: 78px;
+	height: 1px;
+
+	background: #404040;
+}
+
+.selection__title {
+	width: 729px;
+
+	margin: 0 auto;
+	margin-bottom: 44px;
+
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 60px;
+
+	text-align: center;
+
+	color: #404040;
+}
+.selection__description {
+	width: 736px;
+	margin: 0 auto;
+	margin-bottom: 78px;
+
+	font-size: 18px;
+	line-height: 25px;
+
+	text-align: center;
+
+	color: #404040;
+}
+.selection__button {
+	display: block;
+
+	width: 244px;
+	height: 52px;
+
+	margin: 0 auto;
+
+	font-size: 14px;
+	line-height: 14px;
+
+	text-align: center;
+	letter-spacing: 0.11px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	background: #2468ff;
+}
+
+.selection__img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 4px;
+}
+
+.devices {
+	background-image: url("../image/diveces_bg.png");
+	height: 1179px;
+	padding-top: 580px;
+}
+
+.devices__items {
+	display: flex;
+	justify-content: space-between;
+}
+.devices__item1 {
+	margin-left: 188px;
+}
+.devices__item2 {
+	margin-right: 70px;
+}
+.devices__wi-fi {
+	margin-bottom: 16px;
+
+	width: 81px;
+	height: 21px;
+	border-radius: 18px;
+
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	color: #000000;
+	background: #ffffff;
+}
+.devices__name {
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 44px;
+
+	color: #ffffff;
+}
+.devices__advantage {
+	width: 222px;
+	margin-bottom: 20px;
+
+	font-weight: normal;
+	font-size: 42px;
+	line-height: 48px;
+
+	color: #ffffff;
+}
+.devices__item2 .devices__advantage {
+	width: 542px;
+}
+
+.devices__description {
+	width: 420px;
+	margin-bottom: 33px;
+
+	font-size: 18px;
+	line-height: 25px;
+
+	color: #ffffff;
+}
+.devices__price {
+	margin-bottom: 36px;
+
+	font-size: 18px;
+	line-height: 25px;
+
+	color: #ffffff;
+}
+
+.devices__price span {
+	font-weight: bold;
+}
+
+.devices__button {
+	width: 220px;
+	height: 52px;
+
+	margin-bottom: 89px;
+
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+
+	text-align: center;
+	letter-spacing: 0.11px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	background: #2468ff;
+}
+
+.devices__compare {
+	margin-bottom: 4.59px;
+
+	font-size: 14px;
+	line-height: 16px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
+.devices__devider {
+	margin: 0 auto;
+	width: 154px;
+	height: 1px;
+
+	background: #ffffff;
+}
+
+.quote {
+	height: 580px;
+	background-color: #404040;
+}
+.quote__contain {
+	width: 823px;
+	margin: 0 auto;
+	margin-bottom: 49px;
+	padding-top: 200px;
+
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 48px;
+
+	text-align: center;
+
+	color: #ffffff;
+}
+.quote__img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 205px;
+}
+
+.potential {
+	height: 800px;
+	background-image: url("../image/potential_bg.png");
+}
+
+.potential__icons {
+	margin: 0 auto;
+	margin-bottom: 56px;
+	padding-top: 166px;
+	width: 296px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.potential__title {
+	margin-bottom: 44px;
+
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 60px;
+
+	text-align: center;
+
+	color: #ffffff;
+}
+.potential__description {
+	width: 734px;
+	margin: 0 auto;
+	margin-bottom: 118px;
+
+	font-size: 18px;
+	line-height: 25px;
+
+	text-align: center;
+
+	color: #ffffff;
+}
+.potential__button {
+	display: block;
+	width: 220px;
+	height: 52px;
+	margin: 0 auto;
+	margin-bottom: 69px;
+
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+
+	text-align: center;
+	letter-spacing: 0.11px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	background: #2468ff;
+}
+.potential__slide-status {
+	width: 44px;
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 72px;
+	justify-content: space-between;
+}
+
+.rectangle {
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
 }
