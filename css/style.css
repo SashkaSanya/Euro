@@ -573,9 +573,14 @@ nav {
 
 	color: #404040;
 }
+
+.benefits__flex-container {
+	height: 311px;
+}
+
 .benefits__text {
+	display: block;
 	width: 199px;
-	margin-bottom: 75px;
 
 	font-size: 18px;
 	line-height: 25px;
@@ -583,12 +588,24 @@ nav {
 	color: #404040;
 }
 .benefits__button {
-	margin-bottom: 5px;
+	margin-right: auto;
 
 	font-size: 14px;
 	line-height: 16px;
 
 	color: #404040;
 }
-.benefits__devider {
+.benefits__button:after {
+	display: block;
+	margin-top: 5px;
+	content: "";
+
+	height: 1px;
+	background: #404040;
 }
+
+/* .benefits__devider {
+	width: 119px;
+	height: 1px;
+	background: #404040;
+} */
