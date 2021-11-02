@@ -604,8 +604,272 @@ nav {
 	background: #404040;
 }
 
-/* .benefits__devider {
-	width: 119px;
+.systems {
+	padding-top: 69px;
+	padding-bottom: 108px;
+
+	background: #f7f7f7;
+}
+.systems__title {
+	width: 328px;
+	margin: 0 auto;
+	margin-bottom: 39px;
+
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 60px;
+
+	text-align: center;
+
+	color: #404040;
+}
+.systems__selectors {
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 39px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.systems__selector {
+	width: 18px;
+	height: 18px;
+
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+
+	letter-spacing: 0.10998px;
+
+	color: #ffffff;
+	background: #999999;
+}
+
+.sytems__active {
+	background: #00b68c;
+	outline: 1px solid #00b68c;
+	outline-offset: 3px;
+}
+
+.systems__divider {
+	width: 36px;
 	height: 1px;
-	background: #404040;
-} */
+	background: #999999;
+}
+
+.systems__img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 58px;
+}
+.systems__home-size {
+	width: 537px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: flex;
+}
+
+.systems__home-size p {
+	font-size: 18px;
+	line-height: 21px;
+
+	text-align: center;
+
+	color: #404040;
+}
+
+.systems__home-size p:first-child {
+	margin-right: 14px;
+
+	line-height: 60px;
+}
+
+.systems__home-size p:last-child {
+	margin-left: 14px;
+
+	line-height: 60px;
+}
+
+.systems__choice {
+	width: 392px;
+	display: flex;
+	justify-content: space-between;
+}
+.systems__choice button {
+	height: 60px;
+	padding: 0 25px;
+
+	font-size: 21px;
+	line-height: 60px;
+
+	text-align: center;
+
+	color: rgba(64, 64, 64, 0.3);
+	border: 2px solid rgba(64, 64, 64, 0.3);
+}
+
+.systems__button {
+	width: 220px;
+	height: 52px;
+	display: block;
+	margin: 0 auto;
+
+	font-weight: bold;
+	font-size: 14px;
+
+	text-align: center;
+	letter-spacing: 0.11px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	background: #999999;
+}
+
+.turns {
+	padding-top: 117px;
+	padding-bottom: 121px;
+}
+.turns__title {
+	margin-bottom: 123px;
+
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 60px;
+
+	text-align: center;
+
+	color: #404040;
+}
+.turns__container {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.turns__img {
+	margin-right: 80px;
+}
+.turns__content {
+	margin-bottom: 117px;
+}
+.turns__menu {
+	display: flex;
+	margin-bottom: 34px;
+}
+
+.turns__menu-item {
+	margin-right: 30px;
+	padding-bottom: 6.25px;
+
+	font-size: 14px;
+	line-height: 19px;
+
+	text-transform: uppercase;
+
+	color: #999999;
+	border-bottom: 2px solid #dedede;
+}
+
+.turns__menu-item:hover {
+	cursor: pointer;
+}
+
+.turns__menu-active {
+	color: #2468ff;
+	border-bottom: 2px solid #2468ff;
+}
+
+.turns__text {
+	width: 540px;
+	margin-right: 88px;
+	margin-bottom: 28px;
+
+	font-size: 36px;
+	line-height: 52px;
+
+	color: #404040;
+}
+
+.turns__text:after {
+	content: "”";
+}
+
+.turns__text:before {
+	content: "“";
+}
+
+.turns__discription {
+	margin-bottom: 29px;
+
+	font-size: 18px;
+	line-height: 25px;
+
+	color: #646565;
+}
+
+.turns__discription p:first-child {
+	padding-bottom: 14px;
+}
+
+.turns__button-shop {
+	width: 243px;
+	height: 52px;
+
+	font-weight: bold;
+	font-size: 13px;
+
+	text-align: center;
+	letter-spacing: 0.11px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	background: #2468ff;
+}
+.turns__experts {
+	margin-bottom: 35px;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 60px;
+
+	text-align: center;
+
+	color: #404040;
+}
+.turns__team {
+	margin-bottom: 44px;
+	font-size: 18px;
+	line-height: 25px;
+
+	text-align: center;
+
+	color: #404040;
+}
+.turns__button-help {
+	width: 220px;
+	height: 52px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 94px;
+
+	font-weight: bold;
+	font-size: 13px;
+
+	text-align: center;
+	letter-spacing: 0.11px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	background: #2468ff;
+}
+.turns__conditions {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 233px;
+	margin-right: 245px;
+}
+.turns__condition {
+	display: flex;
+	align-items: center;
+}
+.turns__condition img {
+	margin-right: 18px;
+}
