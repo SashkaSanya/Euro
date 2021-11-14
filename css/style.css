@@ -11,8 +11,7 @@ button {
 	font: inherit;
 	color: inherit;
 	background-color: transparent;
-	/* отображаем курсор в виде руки при наведении; некоторые
-	считают, что необходимо оставлять стрелочный вид для кнопок */
+
 	cursor: pointer;
 }
 
@@ -23,12 +22,6 @@ body {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	height: 80px;
 }
 
 .trial {
@@ -42,6 +35,20 @@ nav {
 	color: #ffffff;
 	background: #161f49;
 }
+
+header {
+	position: sticky;
+	top: 0px;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(64, 64, 64, 0.3);
+}
+
+.nav__container {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+}
+
 .nav__logo {
 	margin-left: 36px;
 	margin-right: 195px;
@@ -73,10 +80,13 @@ nav {
 .nav__item a {
 	text-decoration: none;
 	color: inherit;
+	border-bottom: 1px solid;
+	border-bottom-color: rgba(81, 45, 245, 0);
+	transition: border-bottom-color 0.2s linear;
 }
 
-.nav__item:hover {
-	text-decoration: underline;
+.nav__item a:hover {
+	border-bottom-color: rgba(81, 45, 245, 1);
 }
 
 .nav__button {
@@ -92,13 +102,19 @@ nav {
 
 	color: #ffffff;
 	background-color: #2468ff;
+	transition: background-color 0.3s linear;
+}
+
+.nav__button:hover {
+	background-color: #161f49;
 }
 
 .intro {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: #fff;
 	background-image: url("../image/Intro_bg.png");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	max-height: 591px;
 }
 .intro__tittle {
 	margin: 0 auto;
@@ -132,6 +148,7 @@ nav {
 
 	border: 1px solid #ffffff;
 
+	font-weight: bold;
 	font-size: 14px;
 	line-height: 13px;
 
@@ -140,6 +157,13 @@ nav {
 	text-transform: uppercase;
 
 	color: #ffffff;
+
+	transition: background-color 0.3s linear;
+}
+
+.intro__button:hover {
+	background-color: #ffffff;
+	color: #000;
 }
 
 .intro__img {
@@ -148,6 +172,7 @@ nav {
 }
 
 .selection {
+	text-align: center;
 }
 .selection__subtitle {
 	margin-top: 110px;
@@ -161,27 +186,32 @@ nav {
 
 	color: #404040;
 }
+
 .selection__icon {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 27px;
 }
+
 .selection__shop {
-	margin-bottom: 4.8px;
+	display: inline-block;
+	padding-bottom: 4.8px;
+	margin: 0 auto;
+	margin-bottom: 116.2px;
 
 	font-size: 14px;
 	line-height: 16px;
+	font-weight: bold;
 
-	text-align: center;
 	text-transform: uppercase;
-}
-.selection__divider {
-	margin: 0 auto;
-	margin-bottom: 116.2px;
-	width: 78px;
-	height: 1px;
 
-	background: #404040;
+	border-bottom: 1px solid currentColor;
+
+	transition: color 0.25s linear;
+}
+
+.selection__shop:hover {
+	color: #2468ff;
 }
 
 .selection__title {
@@ -560,8 +590,13 @@ nav {
 	justify-content: space-between;
 }
 .benefits__item {
+	display: flex;
+	flex-direction: column;
 }
 .benefits__icon {
+	width: 77px;
+	height: 77px;
+
 	margin-bottom: 33px;
 }
 .benefits__subtitle {
@@ -575,13 +610,12 @@ nav {
 	color: #404040;
 }
 
-.benefits__flex-container {
-	height: 311px;
-}
-
 .benefits__text {
-	display: block;
 	width: 199px;
+
+	padding-bottom: 26px;
+
+	flex: 1 1 auto;
 
 	font-size: 18px;
 	line-height: 25px;
