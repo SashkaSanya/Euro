@@ -212,6 +212,7 @@ header {
 
 .selection__shop:hover {
 	color: #2468ff;
+	cursor: pointer;
 }
 
 .selection__title {
@@ -240,6 +241,7 @@ header {
 
 	color: #404040;
 }
+
 .selection__button {
 	display: block;
 
@@ -256,7 +258,12 @@ header {
 	text-transform: uppercase;
 
 	color: #ffffff;
-	background: #2468ff;
+	background-color: #2468ff;
+	transition: background-color 0.3s linear;
+}
+
+.selection__button:hover {
+	background-color: #161f49;
 }
 
 .selection__img {
@@ -272,6 +279,7 @@ header {
 	padding-top: 580px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
 }
 
 .devices__items {
@@ -296,7 +304,6 @@ header {
 	line-height: 21px;
 
 	text-transform: uppercase;
-	text-align: center;
 
 	color: #000000;
 	background: #ffffff;
@@ -305,7 +312,7 @@ header {
 	font-weight: normal;
 	font-size: 36px;
 	line-height: 44px;
-
+	text-align: left;
 	color: #ffffff;
 }
 .devices__advantage {
@@ -315,7 +322,7 @@ header {
 	font-weight: normal;
 	font-size: 42px;
 	line-height: 48px;
-
+	text-align: left;
 	color: #ffffff;
 }
 .devices__item2 .devices__advantage {
@@ -328,7 +335,7 @@ header {
 
 	font-size: 18px;
 	line-height: 25px;
-
+	text-align: left;
 	color: #ffffff;
 }
 .devices__price {
@@ -336,7 +343,7 @@ header {
 
 	font-size: 18px;
 	line-height: 25px;
-
+	text-align: left;
 	color: #ffffff;
 }
 
@@ -345,6 +352,7 @@ header {
 }
 
 .devices__button {
+	display: block;
 	width: 220px;
 	height: 52px;
 
@@ -354,16 +362,23 @@ header {
 	font-size: 14px;
 	line-height: 14px;
 
-	text-align: center;
 	letter-spacing: 0.11px;
 	text-transform: uppercase;
 
 	color: #ffffff;
 	background: #2468ff;
+
+	transition: background-color 0.3s linear;
+}
+
+.devices__button:hover {
+	background-color: #161f49;
 }
 
 .devices__compare {
-	margin-bottom: 4.59px;
+	display: inline-block;
+	/* margin: 0 auto; */
+	padding-bottom: 4.59px;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -371,14 +386,18 @@ header {
 	text-align: center;
 	text-transform: uppercase;
 
-	color: #ffffff;
-}
-.devices__devider {
-	margin: 0 auto;
-	width: 154px;
-	height: 1px;
+	border-bottom: 1px solid currentColor;
 
-	background: #ffffff;
+	color: #ffffff;
+
+	opacity: 1;
+
+	transition: opacity 0.2s linear;
+}
+
+.devices__compare:hover {
+	opacity: 0.6;
+	cursor: pointer;
 }
 
 .quote {
@@ -421,6 +440,10 @@ header {
 	justify-content: space-between;
 }
 
+.potential__icons img:hover {
+	cursor: pointer;
+}
+
 .potential__title {
 	margin-bottom: 44px;
 
@@ -460,8 +483,16 @@ header {
 	text-transform: uppercase;
 
 	color: #ffffff;
-	background: #2468ff;
+	background-color: #2468ff;
+
+	transition: background-color 0.2s linear;
 }
+
+.potential__button:hover {
+	background-color: #fff;
+	color: #000;
+}
+
 .potential__slide-status {
 	width: 44px;
 	display: flex;
@@ -470,10 +501,19 @@ header {
 	justify-content: space-between;
 }
 
-.rectangle {
+.potential__rectangle {
 	width: 8px;
 	height: 8px;
 	background-color: #fff;
+	opacity: 0.6;
+}
+
+.potential__rectangle:hover {
+	cursor: pointer;
+}
+
+.potential__rectangle-active {
+	opacity: 1;
 }
 
 .deserve {
@@ -560,7 +600,14 @@ header {
 	text-transform: uppercase;
 
 	color: #ffffff;
-	background: #2468ff;
+	background-color: #2468ff;
+
+	transition: background-color 0.3s linear;
+}
+
+.truemesh__button:hover {
+	background-color: #fff;
+	color: #000;
 }
 
 .truemesh img {
@@ -624,19 +671,21 @@ header {
 }
 .benefits__button {
 	margin-right: auto;
+	padding-bottom: 5px;
 
 	font-size: 14px;
 	line-height: 16px;
+	font-weight: bold;
+
+	border-bottom: 1px solid currentColor;
 
 	color: #404040;
-}
-.benefits__button:after {
-	display: block;
-	margin-top: 5px;
-	content: "";
 
-	height: 1px;
-	background: #404040;
+	transition: color 0.2s linear;
+}
+
+.benefits__button:hover {
+	color: #2468ff;
 }
 
 .systems {
