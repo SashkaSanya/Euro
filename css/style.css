@@ -41,12 +41,6 @@ body {
 	font-weight: normal;
 }
 
-nav {
-	display: flex;
-	justify-content: space-between;
-	height: 80px;
-}
-
 .trial {
 	height: 33px;
 
@@ -58,6 +52,26 @@ nav {
 	color: #ffffff;
 	background: #161f49;
 }
+
+header {
+	position: sticky;
+	top: 0px;
+	background-color: #fff;
+}
+
+.nav__container {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+}
+
+.nav__menu {
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(64, 64, 64, 0.3);
+}
+
 .nav__logo {
 	margin-left: 36px;
 	margin-right: 195px;
@@ -89,15 +103,18 @@ nav {
 .nav__item a {
 	text-decoration: none;
 	color: inherit;
+	border-bottom: 1px solid;
+	border-bottom-color: rgba(81, 45, 245, 0);
+	transition: border-bottom-color 0.2s linear;
 }
 
-.nav__item:hover {
-	text-decoration: underline;
+.nav__item a:hover {
+	border-bottom-color: rgba(81, 45, 245, 1);
 }
 
 .nav__button {
 	width: 166px;
-	height: 80px;
+	/* height: 80px; */
 
 	font-size: 14px;
 	line-height: 80px;
@@ -108,13 +125,19 @@ nav {
 
 	color: #ffffff;
 	background-color: #2468ff;
+	transition: background-color 0.3s linear;
+}
+
+.nav__button:hover {
+	background-color: #161f49;
 }
 
 .intro {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: #fff;
 	background-image: url("../image/Intro_bg.png");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	max-height: 591px;
 }
 .intro__tittle {
 	margin: 0 auto;
@@ -148,6 +171,7 @@ nav {
 
 	border: 1px solid #ffffff;
 
+	font-weight: bold;
 	font-size: 14px;
 	line-height: 13px;
 
@@ -156,6 +180,13 @@ nav {
 	text-transform: uppercase;
 
 	color: #ffffff;
+
+	transition: background-color 0.3s linear;
+}
+
+.intro__button:hover {
+	background-color: #ffffff;
+	color: #000;
 }
 
 .intro__img {
@@ -164,6 +195,7 @@ nav {
 }
 
 .selection {
+	text-align: center;
 }
 .selection__subtitle {
 	margin-top: 110px;
@@ -177,27 +209,33 @@ nav {
 
 	color: #404040;
 }
+
 .selection__icon {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 27px;
 }
+
 .selection__shop {
-	margin-bottom: 4.8px;
+	display: inline-block;
+	padding-bottom: 4.8px;
+	margin: 0 auto;
+	margin-bottom: 116.2px;
 
 	font-size: 14px;
 	line-height: 16px;
+	font-weight: bold;
 
-	text-align: center;
 	text-transform: uppercase;
-}
-.selection__divider {
-	margin: 0 auto;
-	margin-bottom: 116.2px;
-	width: 78px;
-	height: 1px;
 
-	background: #404040;
+	border-bottom: 1px solid currentColor;
+
+	transition: color 0.25s linear;
+}
+
+.selection__shop:hover {
+	color: #2468ff;
+	cursor: pointer;
 }
 
 .selection__title {
@@ -226,6 +264,7 @@ nav {
 
 	color: #404040;
 }
+
 .selection__button {
 	display: block;
 
@@ -242,7 +281,12 @@ nav {
 	text-transform: uppercase;
 
 	color: #ffffff;
-	background: #2468ff;
+	background-color: #2468ff;
+	transition: background-color 0.3s linear;
+}
+
+.selection__button:hover {
+	background-color: #161f49;
 }
 
 .selection__img {
@@ -258,6 +302,7 @@ nav {
 	padding-top: 580px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
 }
 
 .devices__items {
@@ -282,7 +327,6 @@ nav {
 	line-height: 21px;
 
 	text-transform: uppercase;
-	text-align: center;
 
 	color: #000000;
 	background: #ffffff;
@@ -291,7 +335,7 @@ nav {
 	font-weight: normal;
 	font-size: 36px;
 	line-height: 44px;
-
+	text-align: left;
 	color: #ffffff;
 }
 .devices__advantage {
@@ -301,7 +345,7 @@ nav {
 	font-weight: normal;
 	font-size: 42px;
 	line-height: 48px;
-
+	text-align: left;
 	color: #ffffff;
 }
 .devices__item2 .devices__advantage {
@@ -314,7 +358,7 @@ nav {
 
 	font-size: 18px;
 	line-height: 25px;
-
+	text-align: left;
 	color: #ffffff;
 }
 .devices__price {
@@ -322,7 +366,7 @@ nav {
 
 	font-size: 18px;
 	line-height: 25px;
-
+	text-align: left;
 	color: #ffffff;
 }
 
@@ -331,6 +375,7 @@ nav {
 }
 
 .devices__button {
+	display: block;
 	width: 220px;
 	height: 52px;
 
@@ -340,16 +385,23 @@ nav {
 	font-size: 14px;
 	line-height: 14px;
 
-	text-align: center;
 	letter-spacing: 0.11px;
 	text-transform: uppercase;
 
 	color: #ffffff;
 	background: #2468ff;
+
+	transition: background-color 0.3s linear;
+}
+
+.devices__button:hover {
+	background-color: #161f49;
 }
 
 .devices__compare {
-	margin-bottom: 4.59px;
+	display: inline-block;
+	/* margin: 0 auto; */
+	padding-bottom: 4.59px;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -357,14 +409,18 @@ nav {
 	text-align: center;
 	text-transform: uppercase;
 
-	color: #ffffff;
-}
-.devices__devider {
-	margin: 0 auto;
-	width: 154px;
-	height: 1px;
+	border-bottom: 1px solid currentColor;
 
-	background: #ffffff;
+	color: #ffffff;
+
+	opacity: 1;
+
+	transition: opacity 0.2s linear;
+}
+
+.devices__compare:hover {
+	opacity: 0.6;
+	cursor: pointer;
 }
 
 .quote {
@@ -407,6 +463,10 @@ nav {
 	justify-content: space-between;
 }
 
+.potential__icons img:hover {
+	cursor: pointer;
+}
+
 .potential__title {
 	margin-bottom: 44px;
 
@@ -446,8 +506,16 @@ nav {
 	text-transform: uppercase;
 
 	color: #ffffff;
-	background: #2468ff;
+	background-color: #2468ff;
+
+	transition: background-color 0.2s linear;
 }
+
+.potential__button:hover {
+	background-color: #fff;
+	color: #000;
+}
+
 .potential__slide-status {
 	width: 44px;
 	display: flex;
@@ -456,10 +524,19 @@ nav {
 	justify-content: space-between;
 }
 
-.rectangle {
+.potential__rectangle {
 	width: 8px;
 	height: 8px;
 	background-color: #fff;
+	opacity: 0.6;
+}
+
+.potential__rectangle:hover {
+	cursor: pointer;
+}
+
+.potential__rectangle-active {
+	opacity: 1;
 }
 
 .deserve {
@@ -546,7 +623,14 @@ nav {
 	text-transform: uppercase;
 
 	color: #ffffff;
-	background: #2468ff;
+	background-color: #2468ff;
+
+	transition: background-color 0.3s linear;
+}
+
+.truemesh__button:hover {
+	background-color: #fff;
+	color: #000;
 }
 
 .truemesh img {
@@ -576,8 +660,13 @@ nav {
 	justify-content: space-between;
 }
 .benefits__item {
+	display: flex;
+	flex-direction: column;
 }
 .benefits__icon {
+	width: 77px;
+	height: 77px;
+
 	margin-bottom: 33px;
 }
 .benefits__subtitle {
@@ -591,13 +680,12 @@ nav {
 	color: #404040;
 }
 
-.benefits__flex-container {
-	height: 311px;
-}
-
 .benefits__text {
-	display: block;
 	width: 199px;
+
+	padding-bottom: 26px;
+
+	flex: 1 1 auto;
 
 	font-size: 18px;
 	line-height: 25px;
@@ -606,19 +694,21 @@ nav {
 }
 .benefits__button {
 	margin-right: auto;
+	padding-bottom: 5px;
 
 	font-size: 14px;
 	line-height: 16px;
+	font-weight: bold;
+
+	border-bottom: 1px solid currentColor;
 
 	color: #404040;
-}
-.benefits__button:after {
-	display: block;
-	margin-top: 5px;
-	content: "";
 
-	height: 1px;
-	background: #404040;
+	transition: color 0.2s linear;
+}
+
+.benefits__button:hover {
+	color: #2468ff;
 }
 
 .systems {
@@ -662,6 +752,10 @@ nav {
 	background: #999999;
 }
 
+.systems__selector:hover {
+	cursor: pointer;
+}
+
 .sytems__active {
 	background: #00b68c;
 	outline: 1px solid #00b68c;
@@ -669,7 +763,7 @@ nav {
 }
 
 .systems__divider {
-	width: 36px;
+	width: 50px;
 	height: 1px;
 	background: #999999;
 }
@@ -742,6 +836,10 @@ nav {
 	background: #999999;
 }
 
+.systems__button:hover {
+	cursor: not-allowed;
+}
+
 .turns {
 	padding-top: 117px;
 	padding-bottom: 121px;
@@ -784,10 +882,14 @@ nav {
 
 	color: #999999;
 	border-bottom: 2px solid #dedede;
+
+	transition: all 0.2s linear;
 }
 
 .turns__menu-item:hover {
 	cursor: pointer;
+	color: #2468ff;
+	border-bottom: 2px solid #2468ff;
 }
 
 .turns__menu-active {
@@ -840,7 +942,14 @@ nav {
 
 	color: #ffffff;
 	background: #2468ff;
+
+	transition: background-color 0.25s linear;
 }
+
+.turns__button-shop:hover {
+	background-color: #161f49;
+}
+
 .turns__experts {
 	margin-bottom: 35px;
 	font-weight: normal;
@@ -876,7 +985,14 @@ nav {
 
 	color: #ffffff;
 	background: #2468ff;
+
+	transition: background-color 0.25s linear;
 }
+
+.turns__button-help:hover {
+	background-color: #161f49;
+}
+
 .turns__conditions {
 	display: flex;
 	justify-content: space-between;
@@ -888,6 +1004,8 @@ nav {
 	align-items: center;
 }
 .turns__condition img {
+	width: 36px;
+	height: 36px;
 	margin-right: 18px;
 }
 
@@ -910,6 +1028,7 @@ nav {
 
 	color: #ffffff;
 }
+
 .end__button {
 	display: block;
 	width: 234px;
@@ -924,6 +1043,13 @@ nav {
 
 	color: #ffffff;
 	background: #2468ff;
+
+	transition: all 0.25s linear;
+}
+
+.end__button:hover {
+	background-color: #ffffff;
+	color: #000;
 }
 
 .footer {
