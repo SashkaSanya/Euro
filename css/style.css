@@ -1014,6 +1014,7 @@ header {
 	padding-bottom: 114px;
 
 	background-image: url("../image/end_bg.png");
+	background-size: cover;
 }
 .end__title {
 	width: 596px;
@@ -1122,8 +1123,6 @@ header {
 	font-size: 14px;
 	line-height: 17px;
 
-	text-transform: uppercase;
-
 	color: #fff;
 
 	border: none;
@@ -1189,6 +1188,22 @@ header {
 .footer__email:focus {
 	outline: none;
 }
+
+.footer__email:autofill {
+	-webkit-box-shadow: inset 0 0 0 50px #161f49; /* цвет вашего фона */
+	-webkit-text-fill-color: #fff; /* цвет текста */
+}
+
+.footer__email:-webkit-autofill {
+	-webkit-box-shadow: inset 0 0 0 50px #161f49; /* цвет вашего фона */
+	-webkit-text-fill-color: #fff; /* цвет текста */
+	font-size: 17px;
+	font-family: Roboto, serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+
 
 .footer__copyright {
 	margin-right: 277px;
