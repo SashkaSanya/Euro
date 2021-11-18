@@ -40,13 +40,19 @@ header {
 	position: sticky;
 	top: 0px;
 	background-color: #fff;
-	border-bottom: 1px solid rgba(64, 64, 64, 0.3);
 }
 
 .nav__container {
 	display: flex;
 	justify-content: space-between;
 	height: 80px;
+}
+
+.nav__menu {
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(64, 64, 64, 0.3);
 }
 
 .nav__logo {
@@ -91,7 +97,7 @@ header {
 
 .nav__button {
 	width: 166px;
-	height: 80px;
+	/* height: 80px; */
 
 	font-size: 14px;
 	line-height: 80px;
@@ -729,6 +735,10 @@ header {
 	background: #999999;
 }
 
+.systems__selector:hover {
+	cursor: pointer;
+}
+
 .sytems__active {
 	background: #00b68c;
 	outline: 1px solid #00b68c;
@@ -736,7 +746,7 @@ header {
 }
 
 .systems__divider {
-	width: 36px;
+	width: 50px;
 	height: 1px;
 	background: #999999;
 }
@@ -809,6 +819,10 @@ header {
 	background: #999999;
 }
 
+.systems__button:hover {
+	cursor: not-allowed;
+}
+
 .turns {
 	padding-top: 117px;
 	padding-bottom: 121px;
@@ -851,10 +865,14 @@ header {
 
 	color: #999999;
 	border-bottom: 2px solid #dedede;
+
+	transition: all 0.2s linear;
 }
 
 .turns__menu-item:hover {
 	cursor: pointer;
+	color: #2468ff;
+	border-bottom: 2px solid #2468ff;
 }
 
 .turns__menu-active {
@@ -907,7 +925,14 @@ header {
 
 	color: #ffffff;
 	background: #2468ff;
+
+	transition: background-color 0.25s linear;
 }
+
+.turns__button-shop:hover {
+	background-color: #161f49;
+}
+
 .turns__experts {
 	margin-bottom: 35px;
 	font-weight: normal;
@@ -943,7 +968,14 @@ header {
 
 	color: #ffffff;
 	background: #2468ff;
+
+	transition: background-color 0.25s linear;
 }
+
+.turns__button-help:hover {
+	background-color: #161f49;
+}
+
 .turns__conditions {
 	display: flex;
 	justify-content: space-between;
@@ -955,6 +987,8 @@ header {
 	align-items: center;
 }
 .turns__condition img {
+	width: 36px;
+	height: 36px;
 	margin-right: 18px;
 }
 
@@ -977,6 +1011,7 @@ header {
 
 	color: #ffffff;
 }
+
 .end__button {
 	display: block;
 	width: 234px;
@@ -991,6 +1026,13 @@ header {
 
 	color: #ffffff;
 	background: #2468ff;
+
+	transition: all 0.25s linear;
+}
+
+.end__button:hover {
+	background-color: #ffffff;
+	color: #000;
 }
 
 .footer {
