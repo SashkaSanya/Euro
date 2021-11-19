@@ -33,7 +33,6 @@ button {
 }
 
 body {
-	width: 100%;
 	margin: 0 auto;
 
 	font-family: Roboto, serif;
@@ -42,7 +41,9 @@ body {
 }
 
 .trial {
-	height: 33px;
+	/* height: 33px; */
+	max-width: 1440px;
+	margin: 0 auto;
 
 	text-align: center;
 	font-size: 14px;
@@ -60,6 +61,8 @@ header {
 }
 
 .nav__container {
+	max-width: 1440px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	height: 80px;
@@ -80,7 +83,7 @@ header {
 	align-self: center;
 }
 .nav__list {
-	width: 766px;
+	/* width: 766px; */
 	display: flex;
 	justify-content: space-between;
 	margin-right: 172px;
@@ -113,7 +116,7 @@ header {
 }
 
 .nav__button {
-	width: 166px;
+	/* width: 166px; */
 	/* height: 80px; */
 
 	font-size: 14px;
@@ -132,11 +135,24 @@ header {
 	background-color: #161f49;
 }
 
+section {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+footer {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 .intro {
+	/* max-width: 1440px;
+	margin: 0 auto; */
+
 	background-color: #fff;
 	background-image: url("../image/Intro_bg.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% auto;
 	max-height: 591px;
 }
 .intro__tittle {
@@ -164,7 +180,7 @@ header {
 }
 .intro__button {
 	display: block;
-	width: 226px;
+	/* width: 226px; */
 	height: 51px;
 	margin: 0 auto;
 	margin-bottom: 87px;
@@ -239,7 +255,7 @@ header {
 }
 
 .selection__title {
-	width: 729px;
+	/* width: 729px; */
 
 	margin: 0 auto;
 	margin-bottom: 44px;
@@ -253,7 +269,7 @@ header {
 	color: #404040;
 }
 .selection__description {
-	width: 736px;
+	/* width: 736px; */
 	margin: 0 auto;
 	margin-bottom: 78px;
 
@@ -268,8 +284,8 @@ header {
 .selection__button {
 	display: block;
 
-	width: 244px;
-	height: 52px;
+	/* width: 244px; */
+	/* height: 52px; */
 
 	margin: 0 auto;
 
@@ -297,8 +313,8 @@ header {
 
 .devices {
 	background-image: url("../image/diveces_bg.png");
-	width: 100%;
-	height: 1179px;
+	/* width: 100%;
+	height: 1179px; */
 	padding-top: 580px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -339,7 +355,7 @@ header {
 	color: #ffffff;
 }
 .devices__advantage {
-	width: 222px;
+	/* width: 222px; */
 	margin-bottom: 20px;
 
 	font-weight: normal;
@@ -353,7 +369,7 @@ header {
 }
 
 .devices__description {
-	width: 420px;
+	/* width: 420px; */
 	margin-bottom: 33px;
 
 	font-size: 18px;
@@ -400,7 +416,6 @@ header {
 
 .devices__compare {
 	display: inline-block;
-	/* margin: 0 auto; */
 	padding-bottom: 4.59px;
 
 	font-size: 14px;
@@ -428,7 +443,7 @@ header {
 	background-color: #404040;
 }
 .quote__contain {
-	width: 823px;
+	/* width: 823px; */
 	margin: 0 auto;
 	margin-bottom: 49px;
 	padding-top: 200px;
@@ -448,7 +463,6 @@ header {
 }
 
 .potential {
-	/* height: 800px; */
 	background-image: url("../image/potential_bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -479,7 +493,7 @@ header {
 	color: #ffffff;
 }
 .potential__description {
-	width: 734px;
+	/* width: 734px; */
 	margin: 0 auto;
 	margin-bottom: 118px;
 
@@ -492,7 +506,7 @@ header {
 }
 .potential__button {
 	display: block;
-	width: 220px;
+	/* width: 220px; */
 	height: 52px;
 	margin: 0 auto;
 	margin-bottom: 69px;
@@ -517,7 +531,7 @@ header {
 }
 
 .potential__slide-status {
-	width: 44px;
+	/* width: 44px; */
 	display: flex;
 	margin: 0 auto;
 	padding-bottom: 72px;
@@ -544,7 +558,7 @@ header {
 	background-color: #fff;
 }
 .deserve__title {
-	width: 782px;
+	/* width: 782px; */
 	margin: 0 auto;
 	margin-bottom: 44px;
 	padding-top: 135px;
@@ -558,7 +572,7 @@ header {
 	color: #404040;
 }
 .deerve__description {
-	width: 707px;
+	/* width: 707px; */
 	margin: 0 auto;
 	margin-bottom: 78px;
 
@@ -596,7 +610,7 @@ header {
 
 .truemesh__description {
 	margin: 0 auto;
-	width: 710px;
+	/* width: 710px; */
 	margin-bottom: 38px;
 
 	font-size: 18px;
@@ -609,8 +623,8 @@ header {
 
 .truemesh__button {
 	display: block;
-	width: 220px;
-	height: 52px;
+	/* width: 220px; */
+	/* height: 52px; */
 	margin: 0 auto;
 	margin-bottom: 50px;
 
@@ -670,7 +684,7 @@ header {
 	margin-bottom: 33px;
 }
 .benefits__subtitle {
-	width: 192px;
+	/* width: 192px; */
 	margin-bottom: 17px;
 
 	font-weight: normal;
@@ -681,7 +695,7 @@ header {
 }
 
 .benefits__text {
-	width: 199px;
+	/* width: 199px; */
 
 	padding-bottom: 26px;
 
@@ -718,7 +732,7 @@ header {
 	background: #f7f7f7;
 }
 .systems__title {
-	width: 328px;
+	/* width: 328px; */
 	margin: 0 auto;
 	margin-bottom: 39px;
 
@@ -731,7 +745,7 @@ header {
 	color: #404040;
 }
 .systems__selectors {
-	width: 300px;
+	/* width: 300px; */
 	margin: 0 auto;
 	margin-bottom: 39px;
 	display: flex;
@@ -763,7 +777,7 @@ header {
 }
 
 .systems__divider {
-	width: 50px;
+	/* width: 50px; */
 	height: 1px;
 	background: #999999;
 }
@@ -774,7 +788,7 @@ header {
 	margin-bottom: 58px;
 }
 .systems__home-size {
-	width: 537px;
+	/* width: 537px; */
 	margin: 0 auto;
 	margin-bottom: 20px;
 	display: flex;
@@ -802,12 +816,12 @@ header {
 }
 
 .systems__choice {
-	width: 392px;
+	/* width: 392px; */
 	display: flex;
 	justify-content: space-between;
 }
 .systems__choice button {
-	height: 60px;
+	/* height: 60px; */
 	padding: 0 25px;
 
 	font-size: 21px;
@@ -820,8 +834,8 @@ header {
 }
 
 .systems__button {
-	width: 220px;
-	height: 52px;
+	/* width: 220px;
+	height: 52px; */
 	display: block;
 	margin: 0 auto;
 
@@ -898,7 +912,7 @@ header {
 }
 
 .turns__text {
-	width: 540px;
+	/* width: 540px; */
 	margin-right: 88px;
 	margin-bottom: 28px;
 
@@ -930,8 +944,8 @@ header {
 }
 
 .turns__button-shop {
-	width: 243px;
-	height: 52px;
+	/* width: 243px;
+	height: 52px; */
 
 	font-weight: bold;
 	font-size: 13px;
@@ -970,8 +984,8 @@ header {
 	color: #404040;
 }
 .turns__button-help {
-	width: 220px;
-	height: 52px;
+	/* width: 220px;
+	height: 52px; */
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 94px;
@@ -1017,7 +1031,7 @@ header {
 	background-size: cover;
 }
 .end__title {
-	width: 596px;
+	/* width: 596px; */
 	margin: 0 auto;
 	margin-bottom: 83px;
 
@@ -1032,8 +1046,8 @@ header {
 
 .end__button {
 	display: block;
-	width: 234px;
-	height: 52px;
+	/* width: 234px;
+	height: 52px; */
 	margin: 0 auto;
 
 	font-weight: bold;
@@ -1076,7 +1090,7 @@ header {
 }
 
 .footer__column {
-	width: 250px;
+	/* width: 250px; */
 }
 .footer__row {
 	margin-bottom: 8px;
@@ -1116,8 +1130,8 @@ header {
 }
 
 .footer__email {
-	width: 293px;
-	height: 44px;
+	/* width: 293px;
+	height: 44px; */
 	margin-right: 28px;
 
 	font-size: 14px;
@@ -1131,8 +1145,8 @@ header {
 }
 
 .footer__button {
-	width: 191px;
-	height: 53px;
+	/* width: 191px;
+	height: 53px; */
 
 	font-size: 14px;
 
@@ -1202,8 +1216,6 @@ header {
 	font-style: normal;
 	font-weight: normal;
 }
-
-
 
 .footer__copyright {
 	margin-right: 277px;
